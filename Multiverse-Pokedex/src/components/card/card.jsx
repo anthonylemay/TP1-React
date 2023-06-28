@@ -7,9 +7,19 @@ import "./Card.css";
 const Card = (props) => {
     const classNames = ["card"];
     if (props.className) classNames.push(props.className);
+    if (props.value === props.active) {
+      classNames.push("active");
+    }
+    const onMouseEnter = () => {
+      props.onMouseEnter(props.value);
+    };
+
+    const onMouseLeave = () => {
+      props.onMouseLeave(props.value);
+    };
 
     return (
-        <article className={classNames.join(" ")}>
+        <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={classNames.join(" ")}>
           <Image
             src={props.ImgSrc}
             alt={props.ImgAlt}
@@ -18,15 +28,15 @@ const Card = (props) => {
             height={props.ImgHeight}
           />
           <CardTitle title={props.title} />
-          <CardBody
+          {props.value === props.active &&  <CardBody
           SkillImgSrc={props.SkillImgSrc}
           SkillImgAlt={props.SkillImgAlt}
           SkillImgLoading={props.SkillImgLoading}
           SkillImgWidth={props.SkillImgWidth}
           SkillImgHeight={props.SkillImgHeight}
           ability={props.ability}
-          />
-        </article>
+          />}
+        </div>
       );
 };
 

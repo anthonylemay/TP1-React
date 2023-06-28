@@ -1,0 +1,8 @@
+.cards {
+    display: flex;
+    place-items: center;
+    background-color: #0b101e;
+    min-height: 100vh;
+    flex-wrap: wrap;
+  }
+  
