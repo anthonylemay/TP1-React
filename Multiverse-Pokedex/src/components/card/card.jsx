@@ -18,7 +18,14 @@ const Card = (props) => {
             height={props.ImgHeight}
           />
           <CardTitle title={props.title} />
-          <CardBody ability={props.ability} />
+          <CardBody
+          SkillImgSrc={props.SkillImgSrc}
+          SkillImgAlt={props.SkillImgAlt}
+          SkillImgLoading={props.SkillImgLoading}
+          SkillImgWidth={props.SkillImgWidth}
+          SkillImgHeight={props.SkillImgHeight}
+          ability={props.ability}
+          />
         </article>
       );
 };

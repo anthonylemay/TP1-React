@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import "../Image/Image.css";
 
 const Image = (props) => {
@@ -14,4 +14,4 @@ const Image = (props) => {
   )
 }
 
-export default Image
+export default Image;
