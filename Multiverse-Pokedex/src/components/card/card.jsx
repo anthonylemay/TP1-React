@@ -18,8 +18,13 @@ const Card = (props) => {
       props.onMouseLeave(props.value);
     };
 
+    const cardstyle = {};
+    if (props.color) {
+      cardstyle.backgroundColor = props.color;
+    }
+
     return (
-        <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={classNames.join(" ")}>
+        <div style={cardstyle} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={classNames.join(" ")}>
           <Image
             src={props.ImgSrc}
             alt={props.ImgAlt}
