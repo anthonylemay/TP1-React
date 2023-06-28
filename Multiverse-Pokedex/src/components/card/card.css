@@ -1,0 +1,20 @@
+.card {
+    max-width: 20rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    min-width: 15%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin: 0 auto;
+    gap: 1rem;
+    background-color: #3c5aa6;
+    box-shadow: 1rem 1rem 3rem #000000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .card p,
+  .card h3,
+  .card span {
+    color: white;
+  }
