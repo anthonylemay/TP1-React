@@ -1,6 +1,6 @@
 .img {
-    max-width: 100%;
-    height: auto;
-    display: flex;
+    max-width: 90%;
+    margin: 1rem;
+    padding: .25rem;
   }
   
