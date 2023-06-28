@@ -22,3 +22,24 @@
   height: 50px;
   padding-left:.25rem;
 }
+
+footer{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#0b101e;
+  font-style:none;
+  color: #283c6f;
+  padding:1rem;
+}
+
+footer a{
+  text-decoration:none;
+  color: #283c6f;
+}
+
+
+footer a:hover{
+  color: rgb(255, 103, 103);
+  opacity: 80%;
+}
